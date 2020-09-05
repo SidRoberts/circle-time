@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "standard": "*"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/standard"
+  }
+}
