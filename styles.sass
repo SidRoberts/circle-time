@@ -1,0 +1,70 @@
+---
+---
+
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
+
+*
+    box-sizing:  border-box
+    margin:      0
+    padding:     0
+    user-select: none
+
+html, body
+    height:     100%
+    text-align: center
+
+body
+    background: #B5D2E4
+    display: table
+    height:  100%
+    width:   100%
+
+#main
+    color:          #000
+    display:        table-cell
+    font-family:    "Josefin Sans", sans-serif
+    font-size:      5rem
+    font-weight:    300
+    height:         100%
+    line-height:    150%
+    padding:        1rem
+    text-shadow:    0 3px 3px #AAA
+    vertical-align: middle
+
+#date, #weather, #schedule, #extra
+    margin: 1em 0
+
+#schedule
+    ol
+        font-size: 3rem
+
+        li
+            display:     inline-block
+            line-height: 100%
+            padding:     10px
+            text-shadow: none
+
+            &:nth-child(1)
+                background: #FF6663
+
+            &:nth-child(2)
+                background: #FEB144
+
+            &:nth-child(3)
+                background: #FDFD97
+
+            &:nth-child(4)
+                background: #9EE09E
+
+            &:nth-child(5)
+                background: #9EC1CF
+
+            &:nth-child(6)
+                background: #CC99CC
+
+.highlight
+    background:  #EEE
+    display:     inline-block
+    line-height: 100%
+    padding:     20px
+    text-shadow: none
