@@ -1,13 +1,13 @@
 /* global $ */
 
 const daysOfTheWeek = [
+  'Sunday',
   'Monday',
   'Tuesday',
   'Wednesday',
   'Thursday',
   'Friday',
-  'Saturday',
-  'Sunday'
+  'Saturday'
 ]
 
 const monthsOfTheYear = [
@@ -27,7 +27,7 @@ const monthsOfTheYear = [
 
 const date = new Date()
 
-const day = daysOfTheWeek[date.getDay() - 1]
+const day = daysOfTheWeek[date.getDay()]
 const month = monthsOfTheYear[date.getMonth()]
 
 $('#date').html('Today is ' + day + ', ' + month + ' ' + date.getDate() + ', ' + date.getFullYear() + '.')
