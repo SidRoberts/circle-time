@@ -60,8 +60,8 @@ const pencilLessons = [
   'Word and Sentence'
 ]
 
-// Ignore weekends (Saturday - 6, Sunday - 7)
-if (date.getDay() <= 5) {
+// Ignore weekends (Saturday - 6, Sunday - 0)
+if (date.getDay() >= 1 && date.getDay() <= 5) {
   var todaysSchedule = schedule[date.getDay() - 1]
 
   $('#schedule').html('The lessons today are: <ol><li> ' + todaysSchedule.join('</li> <li>') + '</li></ol>')
