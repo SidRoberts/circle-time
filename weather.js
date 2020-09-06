@@ -27,6 +27,9 @@ $('#currentWeather').click(
     var newCondition = weathers[newIndex]
 
     $(this).html(newCondition)
+
+    $('body').removeClass(currentCondition)
+    $('body').addClass(newCondition)
   }
 )
 

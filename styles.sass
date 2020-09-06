@@ -14,7 +14,6 @@ html, body
     text-align: center
 
 body
-    background: #B5D2E4
     display: table
     height:  100%
     width:   100%
@@ -72,3 +71,132 @@ body
     line-height: 100%
     padding:     20px
     text-shadow: none
+
+
+
+@mixin droplets($speed)
+    .droplet1
+        animation-duration: (2.8s / $speed)
+
+    .droplet2
+        animation-duration: (2.0s / $speed)
+
+    .droplet3
+        animation-duration: (3.2s / $speed)
+
+    .droplet4
+        animation-duration: (2.4s / $speed)
+
+    .droplet5
+        animation-duration: (2.2s / $speed)
+
+    .droplet6
+        animation-duration: (2.8s / $speed)
+
+    .droplet7
+        animation-duration: (2.0s / $speed)
+
+    .droplet8
+        animation-duration: (3.2s / $speed)
+
+    .droplet9
+        animation-duration: (2.4s / $speed)
+
+
+
+body.sunny
+    background: #EEE768
+
+body.rainy, body.snowy, body.windy
+    background: #B5D2E4
+
+body.cloudy
+    background: #DAE8F1
+
+
+
+body.rainy, body.stormy, body.snowy
+    .droplet
+        animation-iteration-count: infinite
+        animation-name:            falling-droplets
+        animation-timing-function: linear
+        background:                #FFF
+        position:                  absolute
+        height:                    30px
+        top:                       10%
+        width:                     2px
+
+    .droplet1
+        left: 10%
+
+    .droplet2
+        left: 20%
+
+    .droplet3
+        left: 30%
+
+    .droplet4
+        left: 40%
+
+    .droplet5
+        left: 50%
+
+    .droplet6
+        left: 60%
+
+    .droplet7
+        left: 70%
+
+    .droplet8
+        left: 80%
+
+    .droplet9
+        left: 90%
+
+    @keyframes falling-droplets
+        100%
+            top: 90%
+
+
+
+body.rainy
+    @include droplets(2)
+
+
+
+body.stormy
+    @include droplets(4)
+
+    background: #AAA
+
+
+
+body.snowy
+    .droplet
+        border-radius: 10px
+        height:        15px
+        opacity:       0.5
+        width:         15px
+
+    @include droplets(1)
+
+
+
+body.windy
+    animation-duration: 3s
+    animation-name: breezy
+    animation-iteration-count: infinite
+    animation-direction: alternate
+
+@keyframes breezy
+  from
+    transform: skewX(-10deg)
+
+  to
+    transform: skewX(10deg)
+
+
+
+body.foggy
+    background: #AAA
+    opacity:    0.6
