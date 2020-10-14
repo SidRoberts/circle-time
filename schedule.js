@@ -64,7 +64,7 @@ const pencilLessons = [
 if (date.getDay() >= 1 && date.getDay() <= 5) {
   var todaysSchedule = schedule[date.getDay() - 1]
 
-  $('#schedule').html('The lessons today are: <ol><li> ' + todaysSchedule.join('</li> <li>') + '</li></ol>')
+  $('#schedule').html('The lessons today are: <ol><li>' + todaysSchedule.join('</li> <li>') + '</li></ol>')
 
   if (pencilLessons.indexOf(todaysSchedule[0]) !== -1) {
     $('#extra').html('Unpack your bags and get your pencils.')
