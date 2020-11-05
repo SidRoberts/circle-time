@@ -37,7 +37,7 @@ const schedule = [
     'iSpring',
     'iSpring',
     'Discover and Explore',
-    'Story Art',
+    'Word and Sentence',
     'iGenius'
   ],
 
