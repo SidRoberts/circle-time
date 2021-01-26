@@ -7,8 +7,8 @@ const schedule = [
     'Classic',
     'iSpring',
     'Reading Project',
-    'Classic',
-    'Number Adventure'
+    'Number Adventure',
+    'Discover and Explore'
   ],
 
   // Tuesday
