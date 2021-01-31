@@ -25,7 +25,7 @@ const schedule = [
   [
     'Wonders',
     'iSpring',
-    'Word and Sentence',
+    'Wonders',
     'Reading Project',
     'Body Movement',
     'Classic'
@@ -37,7 +37,7 @@ const schedule = [
     'iSpring',
     'iSpring',
     'Discover and Explore',
-    'Word and Sentence',
+    'Society and Me',
     'iGenius'
   ],
 
@@ -45,7 +45,7 @@ const schedule = [
   [
     'Wonders',
     'iSpring',
-    'Word and Sentence',
+    'Wonders',
     'Reading Project',
     'Number Adventure',
     'iPlay'
