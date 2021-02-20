@@ -123,7 +123,11 @@ if (date.getDay() >= 1 && date.getDay() <= 5) {
 
   var urlParams = new URLSearchParams(queryString);
 
-  var className = urlParams.get('class')
+  if (urlParams.has('class')) {
+    var className = urlParams.get('class')
+  } else {
+    var className = 'poplar'
+  }
 
   var todaysSchedule = schedules[className][date.getDay() - 1]
 
