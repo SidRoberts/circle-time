@@ -129,7 +129,13 @@ if (date.getDay() >= 1 && date.getDay() <= 5) {
     var className = 'poplar'
   }
 
-  var todaysSchedule = schedules[className][date.getDay() - 1]
+  if (urlParams.has('day')) {
+    var day = urlParams.get('day')
+  } else {
+    var day = date.getDay() - 1
+  }
+
+  var todaysSchedule = schedules[className][day]
 
   $('#schedule').html('The lessons today are: <ol><li>' + todaysSchedule.join('</li> <li>') + '</li></ol>')
 
