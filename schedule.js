@@ -1,7 +1,7 @@
 /* global $, date */
 
 const schedules = {
-  'poplar': [
+  poplar: [
     // Monday
     [
       'Chinese',
@@ -53,9 +53,7 @@ const schedules = {
     ]
   ],
 
-
-
-  'palm': [
+  palm: [
     // Monday
     [
       'Wonders',
@@ -63,7 +61,7 @@ const schedules = {
       'Chinese',
       'Reading Project',
       'Classic',
-      'Number Adventure',
+      'Number Adventure'
     ],
 
     // Tuesday
@@ -117,25 +115,21 @@ const pencilLessons = [
   'Creative Writing'
 ]
 
-if (urlParams.has('day')) {
-  var day = urlParams.get('day')
-} else {
-  var day = date.getDay() - 1
-}
+const queryString = window.location.search
+
+const urlParams = new URLSearchParams(queryString)
+
+const dayNumber = urlParams.has('day')
+  ? urlParams.get('day')
+  : date.getDay() - 1
 
 // Ignore weekends (Saturday - 6, Sunday - 0)
-if (day >= 1 && day <= 5) {
-  var queryString = window.location.search;
+if (dayNumber >= 1 && dayNumber <= 5) {
+  const className = urlParams.has('class')
+    ? urlParams.get('class')
+    : 'poplar'
 
-  var urlParams = new URLSearchParams(queryString);
-
-  if (urlParams.has('class')) {
-    var className = urlParams.get('class')
-  } else {
-    var className = 'poplar'
-  }
-
-  var todaysSchedule = schedules[className][day]
+  const todaysSchedule = schedules[className][dayNumber]
 
   $('#schedule').html('The lessons today are: <ol><li>' + todaysSchedule.join('</li> <li>') + '</li></ol>')
 

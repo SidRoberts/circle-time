@@ -19,12 +19,12 @@ const temperatures = [
 
 $('#currentWeather').click(
   function () {
-    var currentCondition = $(this).text()
+    const currentCondition = $(this).text()
 
-    var currentIndex = weathers.indexOf(currentCondition)
-    var newIndex = (currentIndex + 1) % weathers.length
+    const currentIndex = weathers.indexOf(currentCondition)
+    const newIndex = (currentIndex + 1) % weathers.length
 
-    var newCondition = weathers[newIndex]
+    const newCondition = weathers[newIndex]
 
     $(this).html(newCondition)
 
@@ -35,12 +35,12 @@ $('#currentWeather').click(
 
 $('#currentTemperature').click(
   function () {
-    var currentCondition = $(this).text()
+    const currentCondition = $(this).text()
 
-    var currentIndex = temperatures.indexOf(currentCondition)
-    var newIndex = (currentIndex + 1) % temperatures.length
+    const currentIndex = temperatures.indexOf(currentCondition)
+    const newIndex = (currentIndex + 1) % temperatures.length
 
-    var newCondition = temperatures[newIndex]
+    const newCondition = temperatures[newIndex]
 
     $(this).html(newCondition)
   }
