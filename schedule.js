@@ -117,8 +117,14 @@ const pencilLessons = [
   'Creative Writing'
 ]
 
+if (urlParams.has('day')) {
+  var day = urlParams.get('day')
+} else {
+  var day = date.getDay() - 1
+}
+
 // Ignore weekends (Saturday - 6, Sunday - 0)
-if (date.getDay() >= 1 && date.getDay() <= 5) {
+if (day >= 1 && day <= 5) {
   var queryString = window.location.search;
 
   var urlParams = new URLSearchParams(queryString);
@@ -127,12 +133,6 @@ if (date.getDay() >= 1 && date.getDay() <= 5) {
     var className = urlParams.get('class')
   } else {
     var className = 'poplar'
-  }
-
-  if (urlParams.has('day')) {
-    var day = urlParams.get('day')
-  } else {
-    var day = date.getDay() - 1
   }
 
   var todaysSchedule = schedules[className][day]
