@@ -119,17 +119,18 @@ const queryString = window.location.search
 
 const urlParams = new URLSearchParams(queryString)
 
+// Sunday 0, Monday 1, Tuesday 2, ..., Saturday 6
 const dayNumber = urlParams.has('day')
   ? urlParams.get('day')
-  : date.getDay() - 1
+  : date.getDay()
 
-// Ignore weekends (Saturday - 6, Sunday - 0)
+// Ignore weekends
 if (dayNumber >= 1 && dayNumber <= 5) {
   const className = urlParams.has('class')
     ? urlParams.get('class')
     : 'poplar'
 
-  const todaysSchedule = schedules[className][dayNumber]
+  const todaysSchedule = schedules[className][dayNumber - 1]
 
   $('#schedule').html('The lessons today are: <ol><li>' + todaysSchedule.join('</li> <li>') + '</li></ol>')
 
