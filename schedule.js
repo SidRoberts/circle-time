@@ -132,7 +132,7 @@ if (dayNumber >= 1 && dayNumber <= 5) {
 
   const todaysSchedule = schedules[className][dayNumber - 1]
 
-  $('#schedule').html('The lessons today are: <ol><li>' + todaysSchedule.join('</li> <li>') + '</li></ol>')
+  $('#schedule').html('The lessons today are: <ol><li contenteditable>' + todaysSchedule.join('</li> <li contenteditable>') + '</li></ol>')
 
   if (pencilLessons.indexOf(todaysSchedule[0]) !== -1) {
     $('#extra').html('Unpack your bags and get your pencils.')
