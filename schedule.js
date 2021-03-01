@@ -4,52 +4,52 @@ const schedules = {
   poplar: [
     // Monday
     [
-      'Chinese',
-      'Classic',
-      'iSpring',
-      'Reading Project',
       'Number Adventure',
-      'Discover and Explore'
+      'Phonics',
+      'Wonders',
+      'Reading Project',
+      'Society and Me',
+      'iPlay'
     ],
 
     // Tuesday
     [
       'Wonders',
-      'iSpring',
-      'iSpring',
-      'Body Movement',
-      'Story Art',
-      'Society and Me'
+      'Phonics',
+      'iSpeak',
+      'Word and Sentence',
+      'Discover and Explore',
+      'Body Movement'
     ],
 
     // Wednesday
     [
-      'Wonders',
-      'iSpring',
-      'Wonders',
+      'Number Adventure',
+      'Phonics',
+      'Phonics',
       'Reading Project',
-      'Body Movement',
+      'Chinese',
       'Classic'
     ],
 
     // Thursday
     [
+      'Body Movement',
       'Wonders',
-      'iSpring',
-      'iSpring',
-      'Discover and Explore',
-      'Society and Me',
-      'iGenius'
+      'Phonics',
+      'iSpeak',
+      'Classic',
+      'Discover and Explore'
     ],
 
     // Friday
     [
+      'Word and Sentence',
+      'Phonics',
       'Wonders',
-      'iSpring',
-      'Wonders',
-      'Reading Project',
-      'Number Adventure',
-      'iPlay'
+      'Story Art',
+      'Society and Me',
+      'iGenius'
     ]
   ],
 
