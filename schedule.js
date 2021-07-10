@@ -5,7 +5,7 @@ const schedules = {
     // Monday
     [
       'Number Adventure',
-      'Phonics',
+      'iSpring',
       'Wonders',
       'Reading Project',
       'Society and Me',
@@ -15,8 +15,8 @@ const schedules = {
     // Tuesday
     [
       'Wonders',
-      'Phonics',
-      'iSpeak',
+      'iSpring',
+      'iSpring',
       'Word and Sentence',
       'Discover and Explore',
       'Body Movement'
@@ -25,8 +25,8 @@ const schedules = {
     // Wednesday
     [
       'Number Adventure',
-      'Phonics',
-      'Phonics',
+      'iSpring',
+      'iSpring',
       'Reading Project',
       'Chinese',
       'Classic'
@@ -36,8 +36,8 @@ const schedules = {
     [
       'Body Movement',
       'Wonders',
-      'Phonics',
-      'iSpeak',
+      'iSpring',
+      'iSpring',
       'Classic',
       'Discover and Explore'
     ],
@@ -45,7 +45,7 @@ const schedules = {
     // Friday
     [
       'Word and Sentence',
-      'Phonics',
+      'iSpring',
       'Wonders',
       'Story Art',
       'Society and Me',
