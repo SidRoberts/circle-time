@@ -16,8 +16,8 @@ const schedules = {
     [
       'Wonders',
       'iSpring',
-      'iSpring',
       'Word and Sentence',
+      'iSpring',
       'Discover and Explore',
       'Body Movement'
     ],
@@ -26,8 +26,8 @@ const schedules = {
     [
       'Number Adventure',
       'iSpring',
-      'iSpring',
       'Reading Project',
+      'iSpring',
       'Chinese',
       'Classic'
     ],
@@ -35,8 +35,8 @@ const schedules = {
     // Thursday
     [
       'Body Movement',
-      'Wonders',
       'iSpring',
+      'Wonders',
       'iSpring',
       'Classic',
       'Discover and Explore'
