@@ -8,16 +8,16 @@ const schedules = {
       'iSpring',
       'Wonders',
       'Reading Project',
-      'Society and Me',
-      'iPlay'
+      'iPlay',
+      'Society and Me'
     ],
 
     // Tuesday
     [
       'Wonders',
       'iSpring',
+      'iGenius',
       'Word and Sentence',
-      'iSpring',
       'Discover and Explore',
       'Body Movement'
     ],
@@ -35,9 +35,9 @@ const schedules = {
     // Thursday
     [
       'Body Movement',
-      'iSpring',
       'Wonders',
       'iSpring',
+      'Reading Project',
       'Classic',
       'Discover and Explore'
     ],
