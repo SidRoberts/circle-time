@@ -17,7 +17,8 @@ const temperatures = [
   'cold'
 ]
 
-$('#currentWeather').click(
+$('#currentWeather').on(
+  'click',
   function () {
     const currentCondition = $(this).text()
 
@@ -33,7 +34,8 @@ $('#currentWeather').click(
   }
 )
 
-$('#currentTemperature').click(
+$('#currentTemperature').on(
+  'click',
   function () {
     const currentCondition = $(this).text()
 
