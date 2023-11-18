@@ -11,6 +11,14 @@ Webpage to show today's date, weather, and lessons to a kindergarten class.
 
 Access via [https://sidroberts.co.uk/circle-time](https://sidroberts.co.uk/circle-time).
 
+### Docker
+
+```bash
+docker build . -t sidroberts/circle-time
+
+docker run --rm -p 80:80 sidroberts/circle-time
+```
+
 ## License
 
 Licensed under the MIT License.
