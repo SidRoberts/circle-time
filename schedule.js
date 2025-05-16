@@ -106,15 +106,6 @@ const schedules = {
   ]
 }
 
-// Lessons that require a pencil at the very beginning of the class
-const pencilLessons = [
-  'iGenius',
-  'iSpring',
-  'Wonders',
-  'Word and Sentence',
-  'Creative Writing'
-]
-
 const queryString = window.location.search
 
 const urlParams = new URLSearchParams(queryString)
@@ -133,10 +124,4 @@ if (dayNumber >= 1 && dayNumber <= 5) {
   const todaysSchedule = schedules[className][dayNumber - 1]
 
   $('#schedule').html('The lessons today are: <ol><li contenteditable>' + todaysSchedule.join('</li> <li contenteditable>') + '</li></ol>')
-
-  if (pencilLessons.indexOf(todaysSchedule[0]) !== -1) {
-    $('#extra').html('Unpack your bags and get your pencils.')
-  } else {
-    $('#extra').html('Unpack your bags.')
-  }
 }
