@@ -1,110 +1,56 @@
 /* global $, date */
 
-const schedules = {
-  poplar: [
-    // Monday
-    [
-      'Number Adventure',
-      'iSpring',
-      'Wonders',
-      'Reading Project',
-      'iPlay',
-      'Society and Me'
-    ],
-
-    // Tuesday
-    [
-      'Wonders',
-      'iSpring',
-      'iGenius',
-      'Word and Sentence',
-      'Discover and Explore',
-      'Body Movement'
-    ],
-
-    // Wednesday
-    [
-      'Number Adventure',
-      'iSpring',
-      'Reading Project',
-      'iSpring',
-      'Chinese',
-      'Classic'
-    ],
-
-    // Thursday
-    [
-      'Body Movement',
-      'Wonders',
-      'iSpring',
-      'Reading Project',
-      'Classic',
-      'Discover and Explore'
-    ],
-
-    // Friday
-    [
-      'Word and Sentence',
-      'iSpring',
-      'Wonders',
-      'Story Art',
-      'Society and Me',
-      'iGenius'
-    ]
+const schedule = [
+  // Monday
+  [
+    'Number Adventure',
+    'iSpring',
+    'Wonders',
+    'Reading Project',
+    'iPlay',
+    'Society and Me'
   ],
 
-  palm: [
-    // Monday
-    [
-      'Wonders',
-      'iSpring',
-      'Chinese',
-      'Reading Project',
-      'Classic',
-      'Number Adventure'
-    ],
+  // Tuesday
+  [
+    'Wonders',
+    'iSpring',
+    'iGenius',
+    'Word and Sentence',
+    'Discover and Explore',
+    'Body Movement'
+  ],
 
-    // Tuesday
-    [
-      'Wonders',
-      'iSpring',
-      'Reading Project',
-      'Body Movement',
-      'Word and Sentence',
-      'Discover and Explore'
-    ],
+  // Wednesday
+  [
+    'Number Adventure',
+    'iSpring',
+    'Reading Project',
+    'iSpring',
+    'Chinese',
+    'Classic'
+  ],
 
-    // Wednesday
-    [
-      'Wonders',
-      'Classic',
-      'iSpring',
-      'iSpring',
-      'Word and Sentence',
-      'iPlay'
-    ],
+  // Thursday
+  [
+    'Body Movement',
+    'Wonders',
+    'iSpring',
+    'Reading Project',
+    'Classic',
+    'Discover and Explore'
+  ],
 
-    // Thursday
-    [
-      'Wonders',
-      'iSpring',
-      'Body Movement',
-      'Creative Writing',
-      'Society and Me',
-      'iGenius'
-    ],
-
-    // Friday
-    [
-      'Wonders',
-      'iSpring',
-      'Reading Project',
-      'Number Adventure',
-      'Discover and Explore',
-      'Society and Explore'
-    ]
+  // Friday
+  [
+    'Word and Sentence',
+    'iSpring',
+    'Wonders',
+    'Story Art',
+    'Society and Me',
+    'iGenius'
   ]
-}
+]
 
 const queryString = window.location.search
 
@@ -117,11 +63,7 @@ const dayNumber = urlParams.has('day')
 
 // Ignore weekends
 if (dayNumber >= 1 && dayNumber <= 5) {
-  const className = urlParams.has('class')
-    ? urlParams.get('class')
-    : 'poplar'
-
-  const todaysSchedule = schedules[className][dayNumber - 1]
+  const todaysSchedule = schedule[dayNumber - 1]
 
   $('#schedule').html('The lessons today are: <ol><li contenteditable>' + todaysSchedule.join('</li> <li contenteditable>') + '</li></ol>')
 }
