@@ -1,6 +1,6 @@
 # Circle Time
 
-Webpage to show today's date, weather, and lessons to a kindergarten class.
+Webpage to show today's date and weather to a kindergarten class.
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/SidRoberts/circle-time/tests.yml?branch=development&style=for-the-badge)](https://github.com/SidRoberts/circle-time/actions)
 
